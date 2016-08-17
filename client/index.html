@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app="application">
+
+<head>
+	<meta charset="utf-8">
+	<title>application</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+
+	<div ui-view></div>
+	
+	<!--scripts-->
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="index.module.js"></script>
+	<script src="app.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="pages/home.controller.js"></script>
+	<script src="components/topbar.component.js"></script>
+</body>
+
+</html>

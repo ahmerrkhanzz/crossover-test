@@ -1,0 +1,9 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+/*base sass*/
+@import "variables";
+@import "home";
+@import "fonts-sass/font-awesome";

@@ -1,0 +1,124 @@
+// global styles
+a{
+    color: $base-text-color;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.navbar{
+    box-shadow: 0px 1px 0px rgba(34,34,34,0.2);
+    border: none;
+    margin-bottom: 0px;
+    &-right{
+        li {
+            width: 50px;
+            text-align: center;
+            a{
+                transition: all 0.7s ease;
+                color: #fff;
+            }
+            &:nth-child(1) a{
+                background-color: $pinterest-color;
+                &:hover, &:focus{
+                    background-color: transparentize($pinterest-color, 0.1);
+                }
+            }
+            &:nth-child(2) a{
+                background-color: $facebook-color;
+                &:hover, &:focus{
+                    background-color: transparentize($facebook-color, 0.1);
+                }
+            }
+            &:nth-child(3) a{
+                background-color: $gmail-color;
+                &:hover, &:focus{
+                    background-color: transparentize($gmail-color, 0.1);
+                }
+            }
+            &:nth-child(4) a{
+                background-color: $twitter-color;
+                &:hover, &:focus{
+                    background-color: transparentize($twitter-color, 0.1);
+                }
+            }
+        }
+    }
+}
+.input-group-lg{
+    .input-group-addon{
+        border-radius: 0px;
+        border: none;
+        background: #fff;
+        border-left: 1px solid $border-color;
+        height: 50px;
+        padding: 10px 0px 10px 15px;
+    }
+    .form-control{
+        border: none;
+        border-right: 1px solid $border-color;
+        height: 50px;
+        border-radius: 0px;
+        font-size: 13px;
+        padding-left: 8px;
+        box-shadow: 0px 0px 0px;
+    }
+}
+.banner{
+    width: 100%;
+    min-height: 240px;
+    background: url("../images/banner.jpg") no-repeat top center/cover;
+    box-shadow: 0px 5px 20px transparentize(#000, 0.7);
+}
+.nav-stacked{
+    border-right: 1px solid $border-color;
+    padding: 15px 0px 45px 0;
+    li {
+        border-bottom: 1px solid $border-color;
+        a{
+            color: $base-text-color;
+            border-radius: 0px;
+            text-align: right;
+            padding: 10px;
+            transition: all 0.2s;
+            i{
+                margin-left: 10px;
+            }
+            &:hover, &:focus{
+                border-right: 4px solid $base-color;
+                color: $base-color;
+            }
+        }
+    }
+    li + li{
+        margin-top: 0px;
+    }
+}
+
+// video categories
+.cat{
+    &-title{
+        color: $base-color;
+    }
+    &-count{
+        font-size: $font-size-base + 2;
+        line-height: 26px;
+        font-weight: 100;
+        padding-left: 10px;
+        a{
+            color: $disabled-text-color;
+        }
+    }
+    .btn-default{
+        border-radius: 0px;
+        transition: all 0.5s;
+        padding: 3px 10px;
+        color: $disabled-text-color;
+        border-color: $disabled-text-color;
+        &:hover, &:focus{
+            background: #fff;
+            border-color: $base-color;
+            color: $base-color;
+        }
+    }
+}
