@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('application', ['ui.router']);
+    .module('application', ['ui.router', 'angular-md5', 'ngCookies', 'ui.bootstrap']);
 
 })();

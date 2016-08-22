@@ -1,0 +1,53 @@
+<div class="home">
+<div class="container-fluid home-container">
+    <div class="overlay">
+    </div>
+    <div class="container home-intro">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 text-center">
+                <h2>
+                    Lorem Ipsum is simply <strong>dummy text</strong> of the printing and typesetting industry. Lorem Ipsum has been.
+                </h2>
+                <h5>
+                    Browse jobs, explore the inside of top companies, and meet the people that work there. Get expert advice and connect with
+                    a career coach who’ll help give your career a major boost.
+                </h5>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <!-- login form -->
+        <div class="row home-form">
+            <h4 class="text-center"><strong>Welcome. </strong> Please login.</h4>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <form class="form-signin">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Username" ng-model="vm.username">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" ng-model="vm.password" placeholder="Password">
+                    </div>
+                    <div class="alert alert-danger" role="alert" ng-if="vm.response.error"> {{vm.response.error}} </div>
+                    <div class="form-group">
+                        <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="vm.submit()">Sign in</button>
+                    </div>
+                </form>
+                <div class="social-logins">
+                    <span>or login with</span>
+                    <ul>
+                        <li><a href="javascript:;" class="btn btn-primary btn-md linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="javascript:;" class="btn btn-primary btn-md facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="javascript:;" class="btn btn-primary btn-md twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="javascript:;" class="btn btn-primary btn-md gmail"><i class="fa fa-google"></i></a></li>
+                        <li><a href="javascript:;" class="btn btn-primary btn-md stackoverflow"><i class="fa fa-stack-overflow"></i></a></li>
+                        <li><a href="javascript:;" class="btn btn-primary btn-md outlook"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <!-- register form -->
+    </div>
+</div>
+</div>
