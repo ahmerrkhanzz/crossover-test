@@ -97,7 +97,7 @@ a {
   color: #32c5d2; }
 
 .cat-count {
-  font-size: 14px;
+  font-size: 14.5px;
   line-height: 26px;
   font-weight: 100;
   padding-left: 10px; }
@@ -120,9 +120,31 @@ a {
   height: 350px; }
   .videobox-container {
     display: block;
-    transition: all 0.5s; }
+    transition: all 0.5s;
+    position: relative; }
+    .videobox-container .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.75);
+      z-index: 9;
+      display: none;
+      transition: all 0.5s; }
     .videobox-container:hover {
       box-shadow: -2px 5px 15px rgba(0, 0, 0, 0.1); }
+      .videobox-container:hover .overlay {
+        display: inherit;
+        transition: all 0.5s; }
+        .videobox-container:hover .overlay a {
+          display: table;
+          height: 100%;
+          width: 100%;
+          text-align: center;
+          font-size: 70px; }
+          .videobox-container:hover .overlay a i {
+            display: table-cell;
+            vertical-align: middle;
+            color: #fff; }
   .videobox-title a {
     color: #32c5d2;
     line-height: 21px; }
@@ -132,19 +154,38 @@ a {
     color: #999; }
   .videobox-single {
     margin-top: 20px; }
-    .videobox-single .progress {
+    .videobox-single p {
+      font-size: 12.5px; }
+    .videobox-single .rating-stars ul {
+      list-style: none;
       padding: 0px;
-      list-style: none; }
-      .videobox-single .progress li:nth-child(1) {
-        background: #0e4e5e; }
-      .videobox-single .progress li:nth-child(2) {
-        background: #146e83; }
-      .videobox-single .progress li:nth-child(3) {
-        background: rgba(30, 157, 189, 0.7); }
-      .videobox-single .progress li:nth-child(4) {
-        background: rgba(30, 157, 189, 0.4); }
-      .videobox-single .progress li:nth-child(5) {
-        background: rgba(30, 157, 189, 0.2); }
+      display: inline-block; }
+      .videobox-single .rating-stars ul li {
+        display: inline-block; }
+        .videobox-single .rating-stars ul li a {
+          padding: 0 5px;
+          font-size: 12.5px;
+          display: inline-block;
+          color: rgba(30, 157, 189, 0.2); }
+          .videobox-single .rating-stars ul li a i {
+            font-size: 15.5px; }
+          .videobox-single .rating-stars ul li a:hover, .videobox-single .rating-stars ul li a.active {
+            color: #0e4e5e;
+            text-decoration: none; }
+
+.progress {
+  padding: 0px;
+  list-style: none; }
+  .progress li:nth-child(1) {
+    background: #0e4e5e; }
+  .progress li:nth-child(2) {
+    background: #146e83; }
+  .progress li:nth-child(3) {
+    background: rgba(30, 157, 189, 0.7); }
+  .progress li:nth-child(4) {
+    background: rgba(30, 157, 189, 0.4); }
+  .progress li:nth-child(5) {
+    background: rgba(30, 157, 189, 0.2); }
 
 .text-elipses {
   white-space: nowrap;
@@ -198,7 +239,7 @@ body, html, .page-content {
     font-weight: lighter;
     margin-bottom: 15px;
     margin-top: 5px;
-    font-size: 14px; }
+    font-size: 14.5px; }
   .home-form .form-control {
     height: 40px;
     background: rgba(255, 255, 255, 0.78);
@@ -207,7 +248,7 @@ body, html, .page-content {
     padding: 5px 15px;
     color: #000;
     border-radius: 0px;
-    font-size: 14px;
+    font-size: 14.5px;
     font-weight: lighter; }
     .home-form .form-control:focus {
       border-color: #fff;
@@ -215,7 +256,7 @@ body, html, .page-content {
   .home-form ::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
     color: #000;
-    font-size: 14px;
+    font-size: 14.5px;
     font-weight: lighter; }
   .home-form :-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
@@ -239,7 +280,7 @@ body, html, .page-content {
   width: 100%; }
   .social-logins span {
     float: left;
-    font-size: 16px;
+    font-size: 16.5px;
     font-weight: 100;
     color: rgba(50, 197, 210, 0.75);
     margin-top: 3px; }
