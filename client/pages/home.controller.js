@@ -37,7 +37,6 @@
         function getVideosList() {
             $http.get('http://localhost:3009/videos?sessionId=' + vm.sessionObj.sessionId).then(function (res) {
                 vm.videosList = res.data.data;
-                console.log(vm.videosList);
                 vm.videosList.forEach(function (item) {
                     vm.ratings = item.ratings;
                     vm.rate = ratePercent(vm.ratings)

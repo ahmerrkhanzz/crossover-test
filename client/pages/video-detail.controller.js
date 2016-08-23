@@ -56,7 +56,6 @@
                 vm.videoSpecs = res.data.data;
                 vm.ratingArray = vm.videoSpecs.ratings;
                 vm.rate = vm.ratePercent(vm.ratingArray);
-                console.log(vm.videoSpecs);
             });
         }
 
