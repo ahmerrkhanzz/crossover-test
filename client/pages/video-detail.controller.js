@@ -10,12 +10,12 @@
         vm.sessionObj = sessionService.getSession();
         vm.rating = [1, 2, 3, 4, 5];
 
-        // function definition
+        // FUNTION DEFINITION
 
         /**
          * Calculate the rating percentage of the video
          * @param  {string} array     Count of all current rating of video 
-         * @return {obj}   final      returns the calculated percentages of the available ratings of video
+         * @return {obj}    final     returns the calculated percentages of the available ratings of video
          */
         function ratePercent(array) {
             var result = {};
@@ -48,17 +48,27 @@
 
         }
 
-        $http.get('http://localhost:3009/video?sessionId=' + vm.sessionObj.sessionId + '&videoId=' + $stateParams.vid).then(function (res) {
-            vm.videoSpecs = res.data.data;
-            vm.ratingArray = vm.videoSpecs.ratings;
-            vm.rate = vm.ratePercent(vm.ratingArray);
-            console.log(vm.videoSpecs);
-        });
+        /**
+         * Get the details of single video
+         */
+        function getSingleVideo() {
+            $http.get('http://localhost:3009/video?sessionId=' + vm.sessionObj.sessionId + '&videoId=' + $stateParams.vid).then(function (res) {
+                vm.videoSpecs = res.data.data;
+                vm.ratingArray = vm.videoSpecs.ratings;
+                vm.rate = vm.ratePercent(vm.ratingArray);
+                console.log(vm.videoSpecs);
+            });
+        }
 
 
-        // function assignment
+
+        // FUNCTION ASSIGNMENT
         vm.myRating = myRating;
         vm.ratePercent = ratePercent;
+        vm.getSingleVideo = getSingleVideo;
+
+        // FUNCTION CALLING
+        vm.getSingleVideo();
 
     }
 })();

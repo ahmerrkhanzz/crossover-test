@@ -1,10 +1,29 @@
-body{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-}
-
 /*base sass*/
 @import "variables";
+@import "topbar";
 @import "home";
 @import "login";
 @import "fonts-sass/font-awesome";
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: $font-size-base;
+}
+a{
+    color: $base-text-color;
+    transition: all 0.7s ease;
+    &:hover, &:focus{
+        text-decoration: none;
+    }
+}
+ul{
+    list-style: none;
+    li{
+        display: inline-block;
+    }
+}
+.text-elipses{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

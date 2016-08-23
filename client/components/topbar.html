@@ -1,29 +1,24 @@
 <nav class="navbar navbar-white navbar-fixed-top">
 	<div class="container">
 		<div class="row">
-			<div class="navbar-header col-sm-3">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-					aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				<a class="navbar-brand" href="#">Hi {{vm.sessionObj.username}}</a>
+			<div class="navbar-header col-sm-4 col-xs-4">
+				<ul class="navbar-left">
+					<li><a href="javascript:;"><span class="fa fa-slack"></span>Discover</a></li>
+					<li><a href="javascript:;"><span class="fa fa-at"></span>Follow</a></li>
+					<li><a href="javascript:;"><span class="fa fa-paperclip"></span>Share</a></li>
+					<li><a href="javascript:;" ng-click="vm.logout()"><span class="fa fa-sign-out"></span>Logout</a></li>
+					
+				</ul>
 			</div>
-			<div class="col-sm-5">
-				<div class="input-group input-group-lg">
-					<span class="input-group-addon" id="sizing-addon1"><i class="fa fa-search"></i></span>
-					<input type="text" class="form-control" placeholder="Search" aria-describedby="sizing-addon1">
-				</div>
+			<div class="col-sm-4 col-xs-4 text-center">
+				<a href="javascript:;" class="logo">Logo Here</a>
 			</div>
-			<div id="navbar" class="col-sm-4">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-					<li><a href="#about"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#contact"><i class="fa fa-google-plus"></i></a></li>
-					<li><a href="javascript:;"><i class="fa fa-twitter"></i></a></li>
-					<li class="logout"><a href="javascript:;" ng-click="vm.logout()">Logout</a></li>
+			<div class="col-sm-4 col-xs-6 navbar-right">
+				<a href="javascript:;" class="user"> <img src="../assets/images/login-dp.jpg" alt=""> {{vm.sessionObj.username}}</a>
+				<ul class="nav navbar-nav pull-right">
+					<li><a href="javascript:;"><i class="fa fa-search"></i></a></li>
+					<li><a href="javascript:;"><i class="fa fa-bell-o"></i></a></li>
+					<li><a href="javascript:;"><i class="fa fa-envelope-o"></i></a></li>
 				</ul>
 			</div>
 		</div>
@@ -34,5 +29,16 @@
 		<div class="col-xs-4 banner-border1"></div>
 		<div class="col-xs-4 banner-border2"></div>
 		<div class="col-xs-4 banner-border3"></div>
+	</div>
+	<div class="container banner-inner">
+		<div class="row">
+			<div class="col-sm-6">
+				<h2>Software Development</h2>
+				<h5>
+					Take your skills to the next level with courses on the most popular programming languages, developer tools, software practices and application development platforms. Gain a deep understanding of how to build, deploy, secure and scale everything from web apps to mobile apps using C#, Java, Angular, JavaScript and more. And stay up to speed on the ever-changing landscape of emerging software development tools and techniques.
+				</h5>
+				<a href="javascript:;" class="btn btn-lg btn-primary">Start Trail</a>
+			</div>
+		</div>
 	</div>
 </div>
