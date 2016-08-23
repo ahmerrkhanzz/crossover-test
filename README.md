@@ -18,10 +18,8 @@
 
 1. Take the clone of project from GitHub directly or download the project folder.
 2. Start the command line or git bash and run the following commands step by step
-    a. npm install -g
-    b. npm install bower -g
-    c. bower install
-    this will instal all of the required dependencies of the project.
-
-3. Now the project is setup and ready for launch from the following command
+3. npm install -g
+4. npm install bower -g
+5. bower install (this will instal all of the required dependencies of the project)
+6. Now the project is setup and ready for launch from the following command
     npm run dev
