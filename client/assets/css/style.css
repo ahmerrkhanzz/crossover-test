@@ -54,7 +54,7 @@
     color: #fff; }
     .banner-inner h2 {
       font-weight: 100;
-      color: #32c5d2; }
+      color: #1e9dbd; }
     .banner-inner h5 {
       line-height: 20px;
       text-align: justify; }
@@ -64,7 +64,7 @@
       border-radius: 0px;
       font-weight: 100; }
       .banner-inner a:hover, .banner-inner a:focus {
-        background: #32c5d2; }
+        background: #1e9dbd; }
   .banner-border1 {
     background: #1e9dbd;
     height: 10px; }
@@ -76,7 +76,7 @@
     height: 10px; }
 
 .cat-title {
-  color: #32c5d2; }
+  color: #1e9dbd; }
 
 .cat-count {
   font-size: 14.5px;
@@ -94,8 +94,8 @@
   border-color: #999; }
   .cat .btn-default:hover, .cat .btn-default:focus {
     background: #fff;
-    border-color: #32c5d2;
-    color: #32c5d2; }
+    border-color: #1e9dbd;
+    color: #1e9dbd; }
 
 .videobox {
   display: block;
@@ -128,20 +128,27 @@
             vertical-align: middle;
             color: #fff; }
   .videobox-title a {
-    color: #32c5d2;
+    color: #1e9dbd;
     line-height: 21px; }
+  .videobox h5 {
+    color: #fff; }
   .videobox p {
     text-align: justify;
     color: #999; }
   .videobox-single {
     margin-top: 20px; }
+    .videobox-single h4 {
+      color: #1e9dbd; }
+    .videobox-single h5, .videobox-single p {
+      color: #fff;
+      text-align: justify; }
     .videobox-single .rating-stars ul {
       padding: 0px;
       display: inline-block; }
       .videobox-single .rating-stars ul li a {
         padding: 0 5px;
         font-size: 12.5px;
-        color: rgba(30, 157, 189, 0.2); }
+        color: #fff; }
         .videobox-single .rating-stars ul li a i {
           font-size: 15.5px; }
         .videobox-single .rating-stars ul li a:hover, .videobox-single .rating-stars ul li a.active {
@@ -149,6 +156,7 @@
           text-decoration: none; }
 
 .progress {
+  border-radius: 0px;
   padding: 0px;
   list-style: none; }
   .progress li:nth-child(1) {
@@ -241,7 +249,7 @@ body, html, .page-content {
     border-radius: 0px; }
 
 .social-logins {
-  border-bottom: 1px solid rgba(50, 197, 210, 0.5);
+  border-bottom: 1px solid rgba(30, 157, 189, 0.5);
   padding-bottom: 10px;
   float: left;
   width: 100%; }
@@ -249,7 +257,7 @@ body, html, .page-content {
     float: left;
     font-size: 16.5px;
     font-weight: 100;
-    color: rgba(50, 197, 210, 0.75);
+    color: rgba(30, 157, 189, 0.75);
     margin-top: 3px; }
   .social-logins ul {
     float: right;
@@ -2480,10 +2488,11 @@ body, html, .page-content {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 12.5px; }
+  font-size: 12.5px;
+  background: #222; }
 
 a {
-  color: #333;
+  color: #fff;
   transition: all 0.7s ease; }
   a:hover, a:focus {
     text-decoration: none; }
@@ -2497,3 +2506,6 @@ ul {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
+
+.jasmine_html-reporter {
+  display: none; }

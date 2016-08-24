@@ -65,7 +65,7 @@
        color: #fff;
        h2{
            font-weight: 100;
-           color: $base-color;
+           color: $base-color1;
        }
        h5{
            line-height: 20px;
@@ -77,20 +77,20 @@
            border-radius: 0px;
            font-weight: 100;
            &:hover, &:focus{
-               background: $base-color;
+               background: $base-color1;
            }
        }
     }
     &-border1{
-        background: $banner-border-color1;
+        background: $base-color1;
         height: 10px;
     }
     &-border2{
-        background: $banner-border-color2;
+        background: $base-color2;
         height: 10px;
     }
     &-border3{
-        background: $banner-border-color3;
+        background: $base-color3;
         height: 10px;
     }
 }

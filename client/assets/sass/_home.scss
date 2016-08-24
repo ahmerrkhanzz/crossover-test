@@ -1,7 +1,7 @@
 // video categories
 .cat{
     &-title{
-        color: $base-color;
+        color: $base-color1;
     }
     &-count{
         font-size: $font-size-base + 2;
@@ -20,8 +20,8 @@
         border-color: $disabled-text-color;
         &:hover, &:focus{
             background: #fff;
-            border-color: $base-color;
-            color: $base-color;
+            border-color: $base-color1;
+            color: $base-color1;
         }
     }
 }
@@ -62,8 +62,11 @@
         }
     }
     &-title a{
-       color: $base-color; 
+       color: $base-color1; 
        line-height: 21px;
+    }
+    h5{
+        color: $base-text-color;
     }
     p{
         text-align: justify;
@@ -71,6 +74,13 @@
     }
     &-single{
         margin-top: 20px;
+        h4{
+            color: $base-color1;
+        }
+        h5, p{
+            color: $base-text-color;
+            text-align: justify;
+        }
         .rating-stars{
             ul{
                 padding: 0px;
@@ -78,12 +88,12 @@
                 li a{
                     padding: 0 5px;
                     font-size: $font-size-base;
-                    color: transparentize($banner-border-color1, 0.8); 
+                    color: $base-text-color; 
                     i{
                         font-size: $font-size-base + 3;
                     }
                     &:hover, &.active{
-                        color: $banner-border-color3;
+                        color: $base-color3;
                         text-decoration: none;
                     }
                 }
@@ -92,25 +102,26 @@
     }
 }
 .progress{
+    border-radius: 0px;
     padding: 0px;
     list-style: none;
     li{
         &:nth-child(1){
-            background: $banner-border-color3;
+            background: $base-color3;
             
         }
         &:nth-child(2){
-            background: $banner-border-color2;
+            background: $base-color2;
             
         }
         &:nth-child(3){
-            background: transparentize($banner-border-color1, 0.3); 
+            background: transparentize($base-color1, 0.3); 
         }
         &:nth-child(4){
-            background: transparentize($banner-border-color1, 0.6); 
+            background: transparentize($base-color1, 0.6); 
         }
         &:nth-child(5){
-            background: transparentize($banner-border-color1, 0.8); 
+            background: transparentize($base-color1, 0.8); 
         }
     }
 }

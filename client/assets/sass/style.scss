@@ -8,6 +8,7 @@
 body{
     font-family: 'Open Sans', sans-serif;
     font-size: $font-size-base;
+    background: #222;
 }
 a{
     color: $base-text-color;
@@ -26,4 +27,7 @@ ul{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.jasmine_html-reporter{
+    display: none;
 }
